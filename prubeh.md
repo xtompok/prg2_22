@@ -8,3 +8,9 @@
  - dědičnost
  - abstraktní třídy a abstraktní metody
 
+## 2.cvičení
+ - haldy
+
+## 3. cvičení
+ - haldy - dokončení
+ - binární vyhledávací stromy

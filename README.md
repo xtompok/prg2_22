@@ -4,4 +4,6 @@ Podmínka pro zápočet je získat alespoň 23 bodů celkem ze 3 úkolů po 10 b
 
 ## Tipy ze cvičení
 
+[Průvodce labyrintem algoritmů](http://pruvodce.ucw.cz/) - kniha popisující mnoho algoritmů a datových struktur včetně jejich implementace.
+
 [Seznam speciálních metod Pythonu](https://docs.python.org/3/reference/datamodel.html#object.__getitem__).
