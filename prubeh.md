@@ -14,3 +14,7 @@
 ## 3. cvičení
  - haldy - dokončení
  - binární vyhledávací stromy
+
+### 4. cvičení
+ - binární vyhledávací stromy - mazání
+ - zadání 1. DÚ

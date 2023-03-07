@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+# See chapter 8 in Průvodce labyrintem algoritmů: https://pruvodce.ucw.cz
 
 class BSTMeta(ABC):
     @abstractmethod
@@ -8,6 +9,10 @@ class BSTMeta(ABC):
 
     @abstractmethod
     def insert(self, num:int):
+        pass
+    
+    @abstractmethod
+    def delete(self, num:int):
         pass
 
 class Node:
@@ -20,6 +25,8 @@ class Node:
 class BST(BSTMeta):
     def __init__(self):
         self.root: Node|None = None
+    def __str__(self) -> str:
+        """Node({id(self)}, val: <hodnota>, left: {id(self.left), right: {id(self.right)}})"""
 
     def search(self, num: int) -> bool:
 	    # Root is empty -> false
@@ -51,6 +58,17 @@ class BST(BSTMeta):
             parent.left = Node(num)
         else:
             parent.right = Node(num)
+    
+    def delete(self, num: int):
+        """Delete the given node from the tree"""
+        # Case 1: no children -> just delete it
+        # Case 2: one child -> 
+        #   - connect the child to our parent where we were
+        #   - delete us
+        # Case 3: two children -> 
+        #   - find successor
+        #   - move the value of the successor to us
+        #   - delete the successor (it doesn't have two children)
    
     def _search_parent(self, num) -> Node:
         """Find the parent of num. Expects that searched num is not in the root node"""
